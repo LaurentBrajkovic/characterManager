@@ -9,12 +9,21 @@
         <title>Character Manager</title>
     </head>
         <body>
+            <!-- Static part of the webpage-->
+            <section class="pageTitle">
+            <h2>Character Manager</h2>
+            <form>
+                <label for="charSearch"></label>
+                <input type="text" id="charSearch" name="charSearch" value="Search Character">
+            </form>
+            </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
                 <img src=img alt="">
                 <h2 class="charName"></h2>
                 <p class="charDescr"></p>
-                <button class="charView">See Character</button>
+                <hr>
+                <!-- <button class="charView">See Character</button> -->
             </main>
             <!-- Template Section -->
             <section class="character">
@@ -23,6 +32,7 @@
                 </template>
             </section>
             <!-- Footer Section even if we don't need it -->
+            <button type="button" id="charAdd">Add a new character to the collection</button>
             <footer>
             </footer>
             <!-- Of course that's a script (for the main menu) -->
