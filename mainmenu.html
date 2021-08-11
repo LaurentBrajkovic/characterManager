@@ -14,28 +14,25 @@
             <h2>Character Manager</h2>
             <form>
                 <label for="charSearch"></label>
-                <input type="text" id="charSearch" name="charSearch" value="Search Character">
+                <input type="search" id="charSearch" name="charSearch" value="Search Character">
+                <!-- <button type="button" class="clickSearch" id="clickSearch">Search</button> -->
             </form>
             </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
-                <img src=img alt="">
-                <h2 class="charName"></h2>
-                <p class="charShortDescr"></p>
-                <ol id="target">
-                </ol>
                 <!-- <button class="charView">See Character</button> -->
             </main>
             <!-- Template Section -->
             <section class="character">
                 <template id="tpl-char">
-                    <img src=img alt="">
-                    <h2 class="charName"></h2>
-                    <p class="charShortDescr"></p>
+                    <img class="charImg" id="charImg" src="" alt="">
+                    <h2 class="charName" id="charName"></h2>
+                    <p class="charShortDescr" id="charShortDescr"></p>
+                    <ol id="target"></ol>
                 </template>
             </section>
             <!-- Footer Section even if we don't need it -->
-            <button type="button" id="charAdd">Add a new character to the collection</button>
+            <button type="button" class="charAdd" id="charAdd">Add a new character to the collection</button>
             <footer>
             </footer>
             <!-- Of course that's a script (for the main menu) -->

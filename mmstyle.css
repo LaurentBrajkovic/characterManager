@@ -12,6 +12,7 @@ html{
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, rgba(75,78,162,1) 0%, rgba(225,68,68,1) 100%);;
 }
 a {
     text-decoration: none;
@@ -24,7 +25,7 @@ li, ul, ol{
     font-family: 'permanent marker';
 }
 
-#charAdd{
+.charAdd{
     font-size: 1rem;
     font-weight: 600;
     color: white;
@@ -35,5 +36,16 @@ li, ul, ol{
     border-radius: 10px;
     box-shadow: 10px 10px 30px -10px #000000;
 }
+/* .clickSearch{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4B7CFB;
+    padding: 6px 40px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px -10px #000000;
+} */
 
 /* Let's go on this style ! */
