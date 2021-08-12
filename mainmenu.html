@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="">
+        <link rel="stylesheet" href="mmstyle.css">
+        <title>Character Manager</title>
+    </head>
+        <body>
+            <!-- Static part of the webpage-->
+            <section class="pageTitle">
+            <h2>Character Manager</h2>
+            <form>
+                <label for="charSearch"></label>
+                <input type="search" id="charSearch" name="charSearch" value="Search Character">
+                <!-- <button type="button" class="clickSearch" id="clickSearch">Search</button> -->
+            </form>
+            </section>
+            <!-- Main Content for the main menu -->
+<<<<<<< HEAD
+
+            <section class="material">
+                <template id="tpl-char">
+                    <img src="" alt="">
+                    <li class="character">
+                        <h4 class="title"></h4>
+                        <p class="powers"></p>
+                    </li>
+=======
+            <main class="charCards">
+                <!-- <button class="charView">See Character</button> -->
+            </main>
+            <!-- Template Section -->
+            <section class="character">
+                <template id="tpl-char">
+                    <img class="charImg" id="charImg" src="" alt="">
+                    <h2 class="charName" id="charName"></h2>
+                    <p class="charShortDescr" id="charShortDescr"></p>
+                    <ol id="target"></ol>
+>>>>>>> 17ae8ba0f132a11eb0d6846fc08309e2f1338d44
+                </template>
+                <ol id="target"></ol>
+            </section>
+            
+            <!-- Footer Section even if we don't need it -->
+            <button type="button" class="charAdd" id="charAdd">Add a new character to the collection</button>
+            <footer>
+            </footer>
+            <!-- Of course that's a script (for the main menu) -->
+            <script src="mmscript.js"></script>
+        </body>
+</html>
