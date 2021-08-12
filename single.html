@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mmstyle.css">
+        <title>Character</title>
+    </head>
+        <body>
+            <!-- Static part of the webpage-->
+            <section class="pageTitle">
+            <h2>Character Manager</h2>
+
+            </section>
+            <!-- Main Content for the main menu -->
+            <main class="charCards">
+                <!-- <button class="charView">See Character</button> -->
+            
+
+            <!-- Template Section -->
+            <section class="material">
+                <template id="tpl-char">
+                    <img src="" alt="" id="charIMG">
+                    <li class="characterList" id="characterList">
+                        <h2 class="charName" id="charName"></h2>
+                        <h4 class="shortDescr" id="shortDescr"></h4>
+                        <p class="longDescr" id="longDescr"></p>
+                    </li>
+                </template>
+                <ol id="target"></ol>
+                </section>
+            
+            </main>
+
+            <!-- Footer Section even if we don't need it -->
+            <footer>
+
+            <a href="#">
+                <button type="button" class="charAdd" id="charAdd">Update character</button>
+            </a>
+            <a href="#">
+                <button type="button" class="charAdd" id="charAdd">Delete</button>
+            </a>
+
+            </footer>
+            <!-- Of course that's a script (for the main menu) -->
+            <script src="sglscript.js"></script>
+        </body>
+</html>

@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="">
         <link rel="stylesheet" href="mmstyle.css">
         <title>Character Manager</title>
     </head>
@@ -30,6 +29,7 @@
                     <li class="characterList" id="characterList">
                         <h4 class="charName" id="charName"></h4>
                         <p class="shortDescr" id="shortDescr"></p>
+                        <a id="charLink" href="#">See Character</a>
                     </li>
                 </template>
                 <ol id="target"></ol>
@@ -37,7 +37,9 @@
             
             </main>
             <!-- Footer Section even if we don't need it -->
-            <button type="button" class="charAdd" id="charAdd">Add a new character to the collection</button>
+            <a href="charadd.html">
+                <button type="button" class="charAdd" id="charAdd">Add a new character to the collection</button>
+            </a>
             <footer>
             </footer>
             <!-- Of course that's a script (for the main menu) -->
