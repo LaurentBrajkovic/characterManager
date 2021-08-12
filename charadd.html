@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="">
+        <link rel="stylesheet" href="mmstyle.css">
+        <title>Character Manager</title>
+    </head>
+        <body>
+            <!-- Static part of the webpage-->
+            <section class="pageTitle">
+            <h2>Character Manager</h2>
+            </section>
+            <!-- Main Content for the main menu -->
+            <main class="charCards">
+                <input type="file" accept=".jpg, .jpeg, .png" id="inCharIMG" class="inCharIMG">
+                <input type="text" id="inCharName" class="inCharName" placeholder="New Character Name">
+                <input type="text" id="inShortDescr" class="inShortDescr" placeholder="Type short description">
+                <input type="text" id="inDescription" class="inDescription" placeholder="Type description">
+                <button class="inCharAdd" id="inCharAdd">Add New Character</button>
+                <!-- Template Section -->
+            <section class="material">
+                <template id="tpl-char">
+                    <img src="" alt="" id="charIMG">
+                    <li class="characterList" id="characterList">
+                        <h4 class="charName" id="charName"></h4>
+                        <p class="shortDescr" id="shortDescr"></p>
+                    </li>
+                </template>
+                <ol id="target"></ol>
+                </section>
+            
+            </main>
+            <!-- Footer Section even if we don't need it -->
+            <footer>
+            </footer>
+            <!-- Of course that's a script (for the main menu) -->
+            <script src="charadd.js"></script>
+        </body>
+</html>

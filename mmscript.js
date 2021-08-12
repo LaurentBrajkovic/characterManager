@@ -1,5 +1,3 @@
-
-
 (async() => {
 
     const template = document.getElementById("tpl-char");
@@ -18,8 +16,11 @@
 
         target.appendChild(character);
     });
-
 })();
+
+document.getElementById('charAdd').addEventListener('click',()=>{
+    
+});
 
     
 
