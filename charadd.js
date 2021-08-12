@@ -1,20 +1,55 @@
-document.getElementById('inCharAdd').addEventListener('click', ()=>{
-    let inputImage = document.getElementById('inCharIMG');
-    let inputCharName = document.getElementById('inCharName');
-    let inputCharShortDescr= document.getElementById('inShortDescr');
-    let inputCharDescription= document.getElementById('inDescription');
-});
+// Init fields
 
-// //  let fileSelector = document.getElementById('inCharIMG');
-// //  console.log(fileSelector)
-// //  fileSelector.addEventListener('change', (event)=>{
-// //     const fileList = event.target.files;
-// //     console.log(fileList);
-// })
+// IMG Convertion
+// Variable to be exported: base64String
 
-const fileSelector = document.getElementById('inCharIMG');
-fileSelector.addEventListener('change', (event) => {
-    const fileList = event.target.files;
-    console.log(fileList);
-});
+var base64String = "";
+  
+function imageUploaded() {
+    var file = document.querySelector(
+        'input[type=file]')['files'][0];
+  
+    var reader = new FileReader();
+    console.log("next");
+      
+    reader.onload = function () {
+        base64String = reader.result.replace("data:", "")
+            .replace(/^.+,/, "");
+
+            document.getElementById("importedIMG").src = `data:image/jpeg;base64,${base64String}`;
+    }
+    reader.readAsDataURL(file);
+}
+
+// Gather & Export data 
+
+    document.getElementById("inCharAdd").addEventListener("click", async () => {
+
+      let inputs = Array.from(document.querySelectorAll(".data"));
+  
+      let values = inputs.map(({ value }) => {
+        return value.trim();
+      });
+  
+      if (values.some((value) => value === "")) {
+        alert("Please fill in all fields");
+        return;
+      }
+  
+      let [name, shortDescription, description] = values;
+      let id = null;
+  
+            console.log(
+        `Our new character is ${name} he is described as ${shortDescription} - but if you really are interested: ${description}`);
+  
+      const postData = await fetch("https://character-database.becode.xyz/characters", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({name, shortDescription, description, image:base64String}),
+      });
+      console.log(postData);
+      console.log(postData.json());
+    });
 

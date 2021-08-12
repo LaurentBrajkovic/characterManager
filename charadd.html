@@ -15,10 +15,12 @@
             </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
-                <input type="file" accept=".jpg, .jpeg, .png" id="inCharIMG" class="inCharIMG">
-                <input type="text" id="inCharName" class="inCharName" placeholder="New Character Name">
-                <input type="text" id="inShortDescr" class="inShortDescr" placeholder="Type short description">
-                <input type="text" id="inDescription" class="inDescription" placeholder="Type description">
+                <img src="" alt="" id="importedIMG">
+                <!-- <input type="file" accept=".jpg, .jpeg, .png" id="inCharIMG" class="inCharIMG"> -->
+                <input type="file" name="" id="fileId" onchange="imageUploaded()">
+                <input class="data" type="text" id="inCharName" class="inCharName" placeholder="New Character Name">
+                <input class="data" type="text" id="inShortDescr" class="inShortDescr" placeholder="Type short description">
+                <input class="data" type="text" id="inDescription" class="inDescription" placeholder="Type description">
                 <button class="inCharAdd" id="inCharAdd">Add New Character</button>
                 <!-- Template Section -->
             <section class="material">
