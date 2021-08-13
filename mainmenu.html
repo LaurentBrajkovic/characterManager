@@ -13,9 +13,10 @@
             <h2>Character Manager</h2>
             <form>
                 <label for="charSearch"></label>
-                <input type="search" id="charSearch" onkeyup="charSearch()" name="charSearch" placeholder="Search Character" value="">
+                <input type="search" id="charSearch" name="charSearch" placeholder="Search Character" value="">
                 <!-- <button type="button" class="clickSearch" id="clickSearch">Search</button> -->
             </form>
+            <hr>
             </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
@@ -23,17 +24,20 @@
             
 
             <!-- Template Section -->
-            <section class="material">
+            
                 <template id="tpl-char">
+                    <div class="material" id="container">
                     <img src="" alt="" id="charIMG">
                     <li class="characterList" id="characterList">
                         <h4 class="charName" id="charName"></h4>
                         <p class="shortDescr" id="shortDescr"></p>
                         <a id="charLink" href="#">See Character</a>
                     </li>
+                </div>
+                
                 </template>
                 <ol id="target"></ol>
-                </section>
+                
             
             </main>
             <!-- Footer Section even if we don't need it -->
