@@ -10,8 +10,7 @@
         <body>
             <!-- Static part of the webpage-->
             <section class="pageTitle">
-            <h2>Character Manager</h2>
-
+                <a href="mainmenu.html"><h2>Character Manager</h2></a>
             </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
@@ -26,7 +25,10 @@
                         <h2 class="charName" id="charName"></h2>
                         <h4 class="shortDescr" id="shortDescr"></h4>
                         <p class="longDescr" id="longDescr"></p>
+                        <a href=" " class="charAdd" id="charUpdate"> Update character </a>
+                        <button href=" " class="charAdd" id="charDelete"> Delete</button>
                     </li>
+
                 </template>
                 <ol id="target"></ol>
                 </section>
@@ -36,12 +38,7 @@
             <!-- Footer Section even if we don't need it -->
             <footer>
 
-            <a href="#">
-                <button type="button" class="charAdd" id="charAdd">Update character</button>
-            </a>
-            <a href="#">
-                <button type="button" class="charAdd" id="charAdd">Delete</button>
-            </a>
+
 
             </footer>
             <!-- Of course that's a script (for the main menu) -->

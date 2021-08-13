@@ -11,17 +11,17 @@
         <body>
             <!-- Static part of the webpage-->
             <section class="pageTitle">
-                <a href="mainmenu.html"><h2>Character Manager</h2></a>
+            <a href="mainmenu.html"><h2>Character Manager</h2></a>
             </section>
             <!-- Main Content for the main menu -->
             <main class="charCards">
-                <img src="" alt="" id="importedIMG">
+                <img class= "imgData" src="" alt="" id="importedIMG">
                 <!-- <input type="file" accept=".jpg, .jpeg, .png" id="inCharIMG" class="inCharIMG"> -->
                 <input type="file" name="" id="fileId" onchange="imageUploaded()">
-                <input class="data" type="text" id="inCharName" class="inCharName" placeholder="New Character Name">
-                <input class="data" type="text" id="inShortDescr" class="inShortDescr" placeholder="Type short description">
-                <input class="data" type="text" id="inDescription" class="inDescription" placeholder="Type description">
-                <button class="inCharAdd" id="inCharAdd">Add New Character</button>
+                <input class="data" type="text" id="inCharName" class="inCharName" value="">
+                <input class="data" type="text" id="inShortDescr" class="inShortDescr" value="">
+                <input class="data" type="text" id="inDescription" class="inDescription" value="">
+                <button class="inCharAdd" id="inCharSave">Save changes</button>
                 <!-- Template Section -->
             <section class="material">
                 <template id="tpl-char">
@@ -39,6 +39,6 @@
             <footer>
             </footer>
             <!-- Of course that's a script (for the main menu) -->
-            <script src="charadd.js"></script>
+            <script src="charedit.js"></script>
         </body>
 </html>

@@ -2,7 +2,6 @@
 
 // IMG Convertion
 // Variable to be exported: base64String
-
 var base64String = "";
   
 function imageUploaded() {
@@ -39,9 +38,6 @@ function imageUploaded() {
       let [name, shortDescription, description] = values;
       let id = null;
   
-            console.log(
-        `Our new character is ${name} he is described as ${shortDescription} - but if you really are interested: ${description}`);
-  
       const postData = await fetch("https://character-database.becode.xyz/characters", {
         method: "POST",
         headers: {
@@ -51,5 +47,7 @@ function imageUploaded() {
       });
       console.log(postData);
       console.log(postData.json());
+
+      window.location.replace(`mainmenu.html`);
     });
 
