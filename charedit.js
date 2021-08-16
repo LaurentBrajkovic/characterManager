@@ -35,12 +35,13 @@
     document.getElementById("importedIMG").src = `data:image/png;base64,${charCard.image}`;
     document.getElementById("inCharName").value = charCard.name;
     document.getElementById("inShortDescr").value = charCard.shortDescription;
-    document.getElementById("inDescription").value = charCard.description;
+    document.getElementById("inDescription").children[0].innerHTML = charCard.description;
 
     document.getElementById("inCharSave").addEventListener("click", async () => {
         //Gather all fields with data ID
         //Except with the IMG Base64 data
         let inputs = Array.from(document.querySelectorAll(".data"));
+        const inDescription = document.getElementById("inDescription").children[0].innerHTML;
         // let imageSave = Array.from(document.querySelector(".imgData"));
         
         let values = inputs.map(({ value }) => {
@@ -52,7 +53,7 @@
           return;
         }
     
-        let [name, shortDescription, description, image] = values;
+        let [name, shortDescription, image] = values;
     
         const postData = await fetch(`https://character-database.becode.xyz/characters/${idSplit}`,{
           method: "PUT",
@@ -62,7 +63,7 @@
           body: JSON.stringify({
               name: `${name}`,
               shortDescription: `${shortDescription}`,
-              description: `${description}`,
+              description: `${inDescription}`,
               image: `${base64String}`,
             })
         });

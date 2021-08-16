@@ -21,6 +21,7 @@ html{
     padding: 10px;
     border-radius: 10px;
     border: 1px transparent;
+    height: 4rem;
 }
 
 body {
@@ -140,7 +141,7 @@ li, ul, ol{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: 0.5s;
     padding: 15px;
-    margin-top: 40px; //40px 20px 40px; // top right bottom left
+    margin-top: 40px;
     p, h4{
         word-wrap: break-word;
     }
@@ -179,14 +180,62 @@ hr{
     margin-top: 20px;
 }
 
-// @media screen and (max-width: 375px) {
-//     .pageTitle{
-//         scale: 0.5;
-//         display: flex;
-//         justify-content: space-between;
-//         margin-top: 25px;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//   }
+@media only screen and (max-width: 680px) {
+    .pageTitle{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            text-align: center;
+            font-size: 2.8rem;
+        }
+    }
+    
+    #charSearch{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px transparent;
+        width: 95%;
+        height: 3rem;
+
+    }
+    body {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 1.6rem;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .material{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 340px;
+        position: relative;
+        align-content: center;
+        background-color: rgba(141, 141, 141, 0.5);
+        border-radius: 20px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition: 0.5s;
+        padding: 15px;
+        margin-top: 40px;
+        p, h4{
+            word-wrap: break-word;
+        }
+    }
+    .charlink{
+        margin: 0 auto;
+    }
+  }
