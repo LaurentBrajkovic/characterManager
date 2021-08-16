@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="mmstyle.css">
+        <link rel="stylesheet" href="scss/main.css">
         <title>Character Manager</title>
     </head>
         <body>
             <!-- Static part of the webpage-->
             <section class="pageTitle">
-            <h2>Character Manager</h2>
+            <h2 class='homeLink'>Character Manager</h2>
             <form>
                 <label for="charSearch"></label>
                 <input type="search" id="charSearch" name="charSearch" placeholder="Search Character" value="">
                 <!-- <button type="button" class="clickSearch" id="clickSearch">Search</button> -->
             </form>
-            <hr>
             </section>
+            <hr class="titleLine">
             <!-- Main Content for the main menu -->
             <main class="charCards">
                 <!-- <button class="charView">See Character</button> -->
@@ -25,19 +25,20 @@
 
             <!-- Template Section -->
             
-                <template id="tpl-char">
+                <div class="container" id="target">
+                <template class="tpl-char" id="tpl-char">
                     <div class="material" id="container">
                     <img src="" alt="" id="charIMG">
                     <li class="characterList" id="characterList">
                         <h4 class="charName" id="charName"></h4>
                         <p class="shortDescr" id="shortDescr"></p>
-                        <a id="charLink" href="#">See Character</a>
+                        <a class="fill" id="charLink" href="#">See Character</a>
                     </li>
                 </div>
                 
                 </template>
-                <ol id="target"></ol>
                 
+            </div>
             
             </main>
             <!-- Footer Section even if we don't need it -->

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Generalities CSS */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size:62,5% /* Rule to have 1rem = 10px */
+}
+
+.pageTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#charSearch{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px transparent;
+}
+
+body {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, rgba(75,78,162,1) 0%, rgba(225,68,68,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+li, ul, ol{
+    list-style-type: none;
+}
+
+.homeLink{
+    font-family: 'Permanent Marker';
+    color: white;
+}
+.homeLink:visited{
+    color: white;
+}
+.homeLink:hover{
+    text-shadow: 2px 2px 4px black;
+    transition: 0.4s;
+}
+
+#charIMG{
+    border-radius: 50%;
+}
+/* Buttons MM */
+.charAdd {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4B7CFB;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px -10px #000000;
+    display: block;
+    margin: 20px auto 20px auto; // top right bottom left
+    padding: 10px 40px 10px 40px; // top right bottom left
+}
+
+.charAdd:hover{
+    box-shadow: 5px 5px 15px -5px #000000;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.material a {
+    position: relative;
+    display:block;
+    
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 6px 20px;
+
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+  
+  .fill:hover {
+    color: black;
+  }
+  
+  .fill:before {
+    content: "";
+    position: absolute;
+    background: whitesmoke;
+    
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: right 0.09s ease-in;
+  }
+
+  .fill:hover:before {
+    right: 0;
+  }
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material{
+    width: 250px;
+    height: 340px;
+    position: relative;
+    align-content: space-between;
+    background-color: rgba(141, 141, 141, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+    padding: 15px;
+    margin-top: 40px; //40px 20px 40px; // top right bottom left
+    p, h4{
+        word-wrap: break-word;
+    }
+}
+
+
+
+.material:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+}
+
+#charIMG{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+#charName{
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#shortDescr{
+    margin-top: 20px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+hr{
+    border-style: solid;
+    color: white;
+    margin-top: 20px;
+}
+
+// @media screen and (max-width: 375px) {
+//     .pageTitle{
+//         scale: 0.5;
+//         display: flex;
+//         justify-content: space-between;
+//         margin-top: 25px;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//   }

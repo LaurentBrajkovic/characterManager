@@ -36,7 +36,6 @@
     document.getElementById("inCharName").value = charCard.name;
     document.getElementById("inShortDescr").value = charCard.shortDescription;
     document.getElementById("inDescription").value = charCard.description;
-    // let passMeOn = charCard.image;
 
     document.getElementById("inCharSave").addEventListener("click", async () => {
         //Gather all fields with data ID
