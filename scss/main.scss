@@ -14,6 +14,7 @@ html{
 .pageTitle{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-top: 25px;
 }
 
@@ -21,7 +22,6 @@ html{
     padding: 10px;
     border-radius: 10px;
     border: 1px transparent;
-    height: 4rem;
 }
 
 body {
@@ -43,6 +43,7 @@ li, ul, ol{
 .homeLink{
     font-family: 'Permanent Marker';
     color: white;
+    margin-bottom: 20px;
 }
 .homeLink:visited{
     color: white;
@@ -77,9 +78,7 @@ li, ul, ol{
 }
 
 .material a {
-    position: relative;
     display:block;
-    
     position: absolute;
     color: white;
     font-size: 1rem;
@@ -88,7 +87,6 @@ li, ul, ol{
     border: 1px solid white;
     border-radius: 10px;
     padding: 6px 20px;
-
     outline: 0;
     overflow:hidden;
     background: none;
@@ -136,7 +134,8 @@ li, ul, ol{
     height: 340px;
     position: relative;
     align-content: space-between;
-    background-color: rgba(141, 141, 141, 0.5);
+    background-color: #363333;
+    opacity: 0.8;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: 0.5s;
@@ -177,7 +176,7 @@ li, ul, ol{
 hr{
     border-style: solid;
     color: white;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 680px) {
@@ -225,7 +224,7 @@ hr{
         height: 340px;
         position: relative;
         align-content: center;
-        background-color: rgba(141, 141, 141, 0.5);
+        background-color: #363333;
         border-radius: 20px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         transition: 0.5s;

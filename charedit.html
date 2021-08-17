@@ -4,25 +4,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="mmstyle.css">
+        <link rel="stylesheet" href="scss/edit.css">
         <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-        <title>Character Manager</title>
+        <title>Edit Character</title>
     </head>
         <body>
             <!-- Static part of the webpage-->
             <section class="pageTitle">
             <a class='homeLink' href="mainmenu.html"><h2>Character Manager</h2></a>
-            <hr>
             </section>
+            <hr class="titleLine">
             <!-- Main Content -->
             <main class="charCards">
                 <img class= "imgData" src="" alt="" id="importedIMG">
                 <!-- <input type="file" accept=".jpg, .jpeg, .png" id="inCharIMG" class="inCharIMG"> -->
-                <input type="file" name="" id="fileId" onchange="imageUploaded()">
+                <input type="file" name="" id="fileId" class="fileInput" onchange="imageUploaded()">
                 <input class="data" type="text" id="inCharName" class="inCharName" value="">
                 <input class="data" type="text" id="inShortDescr" class="inShortDescr" value="">
                 <div  type="text" id="inDescription" value=""></div>
-                <button class="inCharAdd" id="inCharSave">Save changes</button>
+                <button class="inCharAdd charUpdate" id="inCharSave">Save changes</button>
+                
                 <!-- Template Section -->
             <section class="material">
                 <template id="tpl-char">

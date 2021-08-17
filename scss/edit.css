@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+/* Generalities CSS */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+.pageTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+#charSearch {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px transparent;
+}
+
+body {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#4b4ea2), to(#e14444));
+  background: linear-gradient(90deg, #4b4ea2 0%, #e14444 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+li, ul, ol {
+  list-style-type: none;
+}
+
+.homeLink {
+  font-family: 'Permanent Marker';
+  color: white;
+}
+
+.homeLink:visited {
+  color: white;
+}
+
+.homeLink:hover {
+  text-shadow: 2px 2px 4px black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#importedIMG {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.inCharAdd:hover {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+          box-shadow: 5px 5px 15px -5px #000000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.inCharAdd {
+  position: absolute;
+  display: block;
+  left: 39.5%;
+  bottom: 10%;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 6px 20px;
+  outline: 0;
+  overflow: hidden;
+  background: #4B7CFB;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.inCharAdd:hover {
+  color: black;
+}
+
+.inCharAdd:before {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.09s ease-in;
+}
+
+.inCharAdd:hover:before {
+  right: 0;
+}
+
+.inCharAdd:hover {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+          box-shadow: 5px 5px 15px -5px #000000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.charUpdate {
+  position: absolute;
+  display: block;
+  left: 39.5%;
+  bottom: 10%;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 6px 20px;
+  outline: 0;
+  overflow: hidden;
+  background: #4B7CFB;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.charUpdate:hover {
+  color: black;
+}
+
+.charUpdate:before {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.09s ease-in;
+}
+
+.charUpdate:hover:before {
+  right: 0;
+}
+
+.charUpdate:hover {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+          box-shadow: 5px 5px 15px -5px #000000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.charDelete {
+  position: absolute;
+  display: block;
+  left: 52%;
+  bottom: 10%;
+  color: #BF3A30;
+  font-size: 1rem;
+  border: 1px solid #BF3A30;
+  border-radius: 10px;
+  padding: 6px 20px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.charDelete:hover {
+  color: white;
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+          box-shadow: 5px 5px 15px -5px #000000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.charDelete:before {
+  content: "";
+  position: absolute;
+  background: #BF3A30;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.09s ease-in;
+}
+
+.charDelete:hover:before {
+  right: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.charCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+  background-color: rgba(141, 141, 141, 0.5);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 30px 15px;
+  margin-top: 40px;
+}
+
+.charCards:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fileID {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inCharName {
+  margin-top:15px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #363333;
+  font-size: 2rem;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: 'Permanent Marker';
+  color: white;
+}
+
+#inShortDescr {
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #363333;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+  opacity: 0.9;
+}
+
+.ql-toolbar.ql-snow {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid white;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+}
+
+#inDescription {
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #363333;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+hr {
+  border-style: solid;
+  color: white;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 680px) {
+  .pageTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pageTitle h2 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .charUpdate {
+    position: relative;
+  }
+  .charDelete {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=edit.css.map */

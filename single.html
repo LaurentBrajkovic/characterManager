@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="scss/main.css">
+        <link rel="stylesheet" href="scss/single.css">
         <title>Character</title>
     </head>
         <body>
@@ -26,8 +26,10 @@
                         <h2 class="charName" id="charName"></h2>
                         <h4 class="shortDescr" id="shortDescr"></h4>
                         <p class="longDescr" id="longDescr"></p>
-                        <a href=" " class="charAdd" id="charUpdate"> Update character </a>
-                        <button href=" " class="charAdd" id="charDelete"> Delete</button>
+                        <span class="buttons">
+                            <div><a href=" " class="charAdd charUpdate" id="charUpdate">Update character</a></div>
+                            <div><a href=" " class="charAdd charDelete" id="charDelete">Delete character</a></div>
+                        </span>
                     </li>
                 </template>
                 <ol id="target"></ol>
